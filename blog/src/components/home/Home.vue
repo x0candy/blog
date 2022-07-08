@@ -28,11 +28,11 @@ export default {
         },
         {
           name: '笔记',
-          path: './'
+          path: '/artic'
         },
         {
           name: '随想',
-          path: './'
+          path: '/'
         }
       ]
     }
