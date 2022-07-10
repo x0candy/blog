@@ -4,16 +4,19 @@
       <artic-card v-for="(item, index) in artic" :artic="artic[index]" :key="index"></artic-card>
     </div>
     <div class="time_axis">
-      <div class="card shadow-lg p-3 mb-5 bg-body rounded"></div>
+      <div class="card shadow-lg p-3 mb-5 bg-body rounded">
+        <timer-shaft></timer-shaft>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import articCard from './artic_card.vue'
+import articCard from './artic_card'
+import TimerShaft from './TimerShaft'
 export default {
   name: 'artic',
-  components: { articCard },
+  components: { articCard, TimerShaft },
   data () {
     return {
       artic: [
