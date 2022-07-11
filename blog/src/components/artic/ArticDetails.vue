@@ -1,4 +1,5 @@
 <template>
+  <!--文章subtitle组件-->
   <div class="details">
     <span>
       <i class="iconfont icon-calendar"></i>
@@ -12,7 +13,7 @@
     </span>|
     <span>
       <i class="iconfont icon-pinglun"></i>
-      分类于
+      评论
       {{ artic.comment }}
     </span>
   </div>

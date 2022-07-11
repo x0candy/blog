@@ -1,6 +1,8 @@
 <template>
-  <div>
+  <div class="timer_axis">
     <span>时间轴</span>
+    <div class="line">
+    </div>
   </div>
 </template>
 
@@ -16,4 +18,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.line {
+  display: flex;
+  flex-direction: column;
+}
 </style>
