@@ -5,7 +5,7 @@
     <div class="description">
       {{ artic.description }}
     </div>
-    <button>阅读</button>
+    <button @click="goArtic">阅读</button>
   </div>
 </template>
 
@@ -20,6 +20,11 @@ export default {
   data () {
     return {
 
+    }
+  },
+  methods: {
+    goArtic () {
+      // todo
     }
   }
 }</script>
