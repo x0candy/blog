@@ -1,11 +1,11 @@
 <template>
   <div class="artic">
     <div class="list">
-      <artic-card v-for="(item, index) in artic" :artic="artic[index]" :key="index"></artic-card>
+      <artic-card v-for="(item, index) in artic" :artic="item" :key="index" :id="index"></artic-card>
     </div>
     <div class="time_axis">
       <div class="card shadow-lg p-3 mb-5 bg-body rounded">
-        <timer-shaft></timer-shaft>
+        <timer-shaft :artic="artic"></timer-shaft>
       </div>
     </div>
   </div>
@@ -32,6 +32,34 @@ export default {
           title: 'asd',
           type: '前端',
           comment: 2
+        },
+        {
+          time: 1657328424,
+          title: 'asdasdad',
+          type: '前端',
+          comment: 2,
+          description: '建了一个知识星球：天问之路如果想学习二进制安全，或者和我交流，欢迎来这里找我w 2018-1-281.看玄武实验室的每日安全推送（主要是看了android挖矿，p2p蠕虫）2.配置shadow尝试用gdb和gdbserver来调试https://github.com/CENSUS/shadowhtt .'
+        },
+        {
+          time: 1657328423,
+          title: 'asdasdad',
+          type: '前端',
+          comment: 2,
+          description: '建了一个知识星球：天问之路如果想学习二进制安全，或者和我交流，欢迎来这里找我w 2018-1-281.看玄武实验室的每日安全推送（主要是看了android挖矿，p2p蠕虫）2.配置shadow尝试用gdb和gdbserver来调试https://github.com/CENSUS/shadowhtt .'
+        },
+        {
+          time: 1657328422,
+          title: 'asdasdad',
+          type: '前端',
+          comment: 2,
+          description: '建了一个知识星球：天问之路如果想学习二进制安全，或者和我交流，欢迎来这里找我w 2018-1-281.看玄武实验室的每日安全推送（主要是看了android挖矿，p2p蠕虫）2.配置shadow尝试用gdb和gdbserver来调试https://github.com/CENSUS/shadowhtt .'
+        },
+        {
+          time: 1657328421,
+          title: 'asdasdad',
+          type: '前端',
+          comment: 2,
+          description: '建了一个知识星球：天问之路如果想学习二进制安全，或者和我交流，欢迎来这里找我w 2018-1-281.看玄武实验室的每日安全推送（主要是看了android挖矿，p2p蠕虫）2.配置shadow尝试用gdb和gdbserver来调试https://github.com/CENSUS/shadowhtt .'
         }
       ]
     }
@@ -49,6 +77,12 @@ export default {
     height: 200px;
     width: 70%;
     margin-top: 20px;
+  }
+
+  @media screen and (max-width:984px) {
+    .time_axis {
+      display: none;
+    }
   }
 
   .time_axis {

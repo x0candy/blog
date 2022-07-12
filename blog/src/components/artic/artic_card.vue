@@ -5,6 +5,7 @@
     <div class="description">
       {{ artic.description }}
     </div>
+    <button>阅读</button>
   </div>
 </template>
 
